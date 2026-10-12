@@ -56,6 +56,13 @@ p{max-width:40em}
 .words{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1rem}
 .words div{border-top:4px solid var(--red);padding-top:.5rem}
 .words b{font:800 1.5rem "Bricolage Grotesque",sans-serif;display:block}
+.ficha{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:2px solid var(--ink);background:var(--card);margin-top:1.5rem}
+.ficha div{padding:1rem 1.2rem;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.ficha dt{font:500 .95rem "Bricolage Grotesque",sans-serif;color:var(--mute);margin:0}
+.ficha dd{font:800 1.5rem/1.2 "Bricolage Grotesque",sans-serif;margin:.2rem 0 0}
+.ficha dd small{display:block;font:400 .9rem/1.4 "Source Serif 4",serif;color:var(--mute);margin-top:.2rem}
+.ficha .hl{background:var(--red);color:#fff}
+.ficha .hl dt,.ficha .hl dd small{color:#fff;opacity:.9}
 footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem;text-align:center}
 @media (max-width:560px){.bar{grid-template-columns:5.5rem 1fr 2.8rem}.panel dl{grid-template-columns:1fr}.panel dd{margin-bottom:.4rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -66,11 +73,24 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
   <div class="top"><h1 class="date">11.11<br>1975</h1></div>
   <div class="bot">
     <p>À meia-noite, em Luanda, Agostinho Neto proclamou a independência de Angola. Esta página conta como o país chegou até esse dia e quais línguas o falam.</p>
-    <nav aria-label="Seções"><a href="#caminho">O caminho</a><a href="#movimentos">Os movimentos</a><a href="#linguas">As línguas</a></nav>
+    <nav aria-label="Seções"><a href="#ficha">Ficha rápida</a><a href="#caminho">O caminho</a><a href="#movimentos">Os movimentos</a><a href="#linguas">As línguas</a></nav>
   </div>
 </header>
 
 <main>
+<section id="ficha">
+  <h2>Angola em resumo</h2>
+  <dl class="ficha" style="margin-bottom:0">
+    <div><dt>Capital</dt><dd>Luanda</dd></div>
+    <div><dt>Idioma oficial</dt><dd>Português<small>Línguas nacionais: umbundu, kimbundu, kikongo e outras</small></dd></div>
+    <div><dt>Moeda</dt><dd>Kwanza (AOA)</dd></div>
+    <div><dt>População</dt><dd>cerca de 37 milhões<small>Estimativa recente. O censo de 2014 contou 25,8 milhões.</small></dd></div>
+    <div class="hl"><dt>Independência</dt><dd>11 de novembro de 1975<small>De Portugal</small></dd></div>
+    <div><dt>Primeiro presidente</dt><dd>Agostinho Neto</dd></div>
+  </dl>
+  <p class="note">Informações de 2024.</p>
+</section>
+
 <section id="caminho">
   <h2>O caminho até 1975</h2>
   <p>Os portugueses chegaram à foz do rio Zaire por volta de 1483 e, durante séculos, Angola foi colônia. A independência veio depois de uma guerra de libertação e da queda da ditadura em Portugal.</p>
@@ -128,7 +148,7 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
     <div class="bar"><span>Kikongo</span><i style="width:8%"></i><span>~8%</span></div>
     <div class="bar"><span>Kimbundu</span><i style="width:8%"></i><span>~8%</span></div>
   </div>
-  <p class="note">Valores aproximados, baseados no censo angolano de 2014 (língua mais falada em casa). </p>
+  <p class="note">Valores aproximados, baseados no censo angolano de 2016 (língua mais falada em casa). Existem ainda outras línguas, como chokwe, cuanhama e nganguela.</p>
 
   <h3 style="margin-top:2.5rem">Palavras que o português de Angola herdou</h3>
   <div class="words">
@@ -139,7 +159,7 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
 </section>
 </main>
 
-<footer>-------<span class="star"> ★</span></footer>
+<footer>Esperamos que tenham gostado! Obrigado.<span class="star"> ★</span></footer>
 
 <script>
 (function(){
