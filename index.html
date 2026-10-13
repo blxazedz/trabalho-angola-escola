@@ -38,6 +38,7 @@ p{max-width:40em}
 .actors{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem}
 .actors div{background:var(--card);border:1px solid var(--line);padding:1rem 1.1rem;border-left:6px solid var(--gold)}
 .actors p{margin:.2rem 0 0;font-size:.98rem;color:var(--mute)}
+.actors .full{font:500 .95rem/1.3 "Bricolage Grotesque",sans-serif;color:var(--ink);margin:0 0 .5rem}
 .tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0 1rem}
 .tabs button{font:500 1rem "Bricolage Grotesque",sans-serif;padding:.6rem 1.1rem;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;border-radius:999px}
 .tabs button[aria-selected="true"]{background:var(--red);border-color:var(--red);color:#fff}
@@ -83,7 +84,7 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
   <dl class="ficha" style="margin-bottom:0">
     <div><dt>Capital</dt><dd>Luanda</dd></div>
     <div><dt>Idioma oficial</dt><dd>Português<small>Línguas nacionais: umbundu, kimbundu, kikongo e outras</small></dd></div>
-    <div><dt>Moeda</dt><dd>Kwanza (AOA)</dd></div>
+    <div><dt>Moeda</dt><dd>Kwanza (AOA)<small>AOA: código internacional (ISO) do kwanza angolano</small></dd></div>
     <div><dt>População</dt><dd>cerca de 37 milhões<small>Estimativa recente. O censo de 2014 contou 25,8 milhões.</small></dd></div>
     <div class="hl"><dt>Independência</dt><dd>11 de novembro de 1975<small>De Portugal</small></dd></div>
     <div><dt>Primeiro presidente</dt><dd>Agostinho Neto</dd></div>
@@ -97,7 +98,7 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
   <ol class="tl">
     <li><span class="y">1961</span><h3>Começa a luta armada</h3><p>Em 4 de fevereiro, ataques em Luanda marcam o início da guerra de libertação contra o domínio português.</p></li>
     <li><span class="y">1974</span><h3>Revolução dos Cravos</h3><p>Em 25 de abril, militares derrubam o regime em Portugal. O novo governo aceita negociar o fim do império colonial.</p></li>
-    <li><span class="y">1975, janeiro</span><h3>Acordo do Alvor</h3><p>Portugal, MPLA, FNLA e UNITA combinam um governo de transição e a data da independência. O acordo logo desmorona e os três movimentos entram em conflito.</p></li>
+    <li><span class="y">1975, janeiro</span><h3>Acordo do Alvor</h3><p>Portugal, MPLA (Movimento Popular de Libertação de Angola), FNLA (Frente Nacional de Libertação de Angola) e UNITA (União Nacional para a Independência Total de Angola) combinam um governo de transição e a data da independência. O acordo logo desmorona e os três movimentos entram em conflito.</p></li>
     <li class="big"><span class="y">1975, 11 de novembro</span><h3>Independência</h3><p>Agostinho Neto, líder do MPLA, proclama a República Popular de Angola em Luanda e torna-se o primeiro presidente.</p></li>
     <li><span class="y">2002</span><h3>Fim da guerra civil</h3><p>Após o conflito que se seguiu à independência, o cessar-fogo de abril de 2002 encerra quase três décadas de guerra.</p></li>
   </ol>
@@ -107,9 +108,9 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
   <h2>Os três movimentos</h2>
   <p>A luta pela independência foi conduzida por três movimentos, com bases em regiões e comunidades diferentes. A divisão não seguiu apenas linhas de língua, mas as raízes de cada um ajudam a entender o período.</p>
   <div class="actors">
-    <div><h3>MPLA</h3><p>Forte em Luanda e na região kimbundu. Liderado por Agostinho Neto.</p></div>
-    <div><h3>FNLA</h3><p>Base no norte, entre falantes de kikongo. Liderada por Holden Roberto.</p></div>
-    <div><h3>UNITA</h3><p>Apoio no planalto central, entre falantes de umbundu. Liderada por Jonas Savimbi.</p></div>
+    <div><h3>MPLA</h3><p class="full">Movimento Popular de Libertação de Angola</p><p>Forte em Luanda e na região kimbundu. Liderado por Agostinho Neto.</p></div>
+    <div><h3>FNLA</h3><p class="full">Frente Nacional de Libertação de Angola</p><p>Base no norte, entre falantes de kikongo. Liderada por Holden Roberto.</p></div>
+    <div><h3>UNITA</h3><p class="full">União Nacional para a Independência Total de Angola</p><p>Apoio no planalto central, entre falantes de umbundu. Liderada por Jonas Savimbi.</p></div>
   </div>
 </section>
 
@@ -142,7 +143,7 @@ footer{background:var(--black);color:#cfc8bf;padding:2rem 1.3rem;font-size:.9rem
   </div>
 
   <h3 style="margin-top:2.5rem">Quantos falam o quê</h3>
-  <div class="bars" role="img" aria-label="Gráfico de barras: português cerca de 71%, umbundu 23%, kikongo 8%, kimbundu 8%">
+  <div class="bars" role="img" aria-label="Gráfico de barras: português Cerca de 71%, umbundu 23%, kikongo 8%, kimbundu 8%">
     <div class="bar"><span>Português</span><i class="pt" style="width:71%"></i><span>~71%</span></div>
     <div class="bar"><span>Umbundu</span><i style="width:23%"></i><span>~23%</span></div>
     <div class="bar"><span>Kikongo</span><i style="width:8%"></i><span>~8%</span></div>
